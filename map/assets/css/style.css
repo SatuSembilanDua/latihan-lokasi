@@ -1,0 +1,74 @@
+body{
+	position: absolute;
+	width:100%;
+	height:100%;
+}
+
+.list-box{
+	height: 500px;
+	overflow-y: auto; 
+}
+.map-box{
+	height: 500px;
+}
+
+.list-group-item{
+	cursor: pointer;
+}
+
+.peta{
+	width:100%;
+	height:100%;
+}
+
+#map{
+	width:100%;
+	height:100%;
+}
+
+.tab_menu{
+	position: fixed;
+	top: 10%;
+	right: 0;
+	cursor: pointer;
+	padding: 15px;
+	background: #FFFFFF;
+	-webkit-transition: right 0.3s; /* Safari */
+    transition: right 0.3s;
+}
+
+#instructions{
+	max-height: 400px;
+	margin-top: 10px;		
+	overflow-y: scroll;
+}
+
+
+#instructions li{
+	list-style: none;
+	border-bottom: 1px solid #F5F5F5;
+	top-bottom: 5px;
+	padding: 5px 5px;
+	cursor: pointer;
+}
+
+#instructions li:hover{
+	background: #F5F5F5;
+}
+
+
+.panel-cari{
+	position: fixed;
+	width: 0;
+	top: 10%;
+	right: 0;
+	-webkit-transition: width 0.3s; /* Safari */
+    transition: width 0.3s;
+}
+
+@media screen and (max-height: 568px) {
+    .panel-body {
+    	height: 200px;	
+		overflow-y: scroll;
+    }
+}
